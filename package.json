@@ -1,0 +1,59 @@
+{
+  "name": "filmoteka",
+  "version": "1.1.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "https://hrendzha.github.io/filmoteka",
+  "scripts": {
+    "dev": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /filmoteka/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hrendzha/filmoteka.git"
+  },
+  "keywords": [],
+  "author": "Pavlo Hrendzha <pashahrendzha99@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hrendzha/filmoteka/issues"
+  },
+  "devDependencies": {
+    "lodash.throttle": "^4.1.1",
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-custom-dist-structure": "^1.1.19",
+    "parcel-plugin-handlebars-precompile": "^1.0.2",
+    "parcel-plugin-nuke-dist": "^1.0.1",
+    "posthtml-include": "^1.6.2",
+    "sass": "^1.32.8"
+  },
+  "dependencies": {
+    "axios": "^0.22.0",
+    "basiclightbox": "^5.0.4",
+    "notiflix": "^3.1.0"
+  },
+  "customDistStructure": {
+    "config": {
+      "js": [
+        ".js",
+        ".js.map"
+      ],
+      "css": [
+        ".css",
+        ".css.map"
+      ],
+      "images": [
+        ".jpg",
+        ".png",
+        ".svg"
+      ],
+      "fonts": [
+        "woff",
+        "woff2"
+      ]
+    },
+    "options": {
+      "development": true
+    }
+  }
+}

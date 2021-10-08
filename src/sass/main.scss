@@ -1,0 +1,16 @@
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+
+@import './vendors/modern-normalize';
+
+@import './utils/variables';
+
+@import './utils/mixins';
+
+@import './utils/placeholders';
+
+@import './base/common';
+
+@import './base/container';
